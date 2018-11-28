@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rotate {
+  display: flex;
+  justify-content: center;
+}
+
+.base64 {
+  height: 200px;
+  width: 140px;
+}
+
+.base64  img{
+  width: 100%;
+  display: block;
+}
+
+.addSVG {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  margin: 30px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center img {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .center {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .center {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .center {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+  .center {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .center {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+.animation__background {
+  cursor: pointer;
+  stroke: #fe0067;
+  stroke-width: 2px;
+  fill: white;
+  z-index: 2;
+  
+}
+
+.animation__background-purple {
+  stroke: #5E35B1;
+}
+
+.animation__text {
+  font: bold 22px sans-serif;
+  fill: #fe0067;
+  letter-spacing: 2px;
+}
+.animation__text--purple {
+  fill: #5E35B1;
+}
+
+.animation__hover {
+  fill: #fe0067;
+  fill-opacity: 0.6;
+  transition: all 1.2s;
+}
+
+.animation__hover--purple {
+  fill: #5E35B1;
+}
+
+.animation__button:hover > .animation__hover {
+  x: 2px;
+  width: 396px;
+  fill-opacity: 1;
+}
+
+.animation__button:hover > .animation__text {
+  fill: white;
+}
+
+.menu {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu:hover .menu__center {
+  transform: rotate(45deg);
+  transition: 0.5s;
+  x:400px;
+  y:-60px;
+}
+
+.menu:hover .menu__top {
+  transform: rotate(45deg);
+  transition: 0.5s;
+  x:400px;
+  y:-60px;
+}
+
+.menu:hover .menu__bottom {
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  x: -50px;
+  y: 490px;
+}
